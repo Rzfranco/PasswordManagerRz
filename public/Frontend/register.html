@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900|Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <img src="../assets/rz.png" alt="Tu Logo" class="logo">
+    </head>
+<body>
+    <div class="container">
+        <h1>Create Your Account</h1>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required placeholder="email@gmail.com" >
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Tu nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="************" minlength="8" maxlength="20">
+            </div>
+            <button type="submit">Create Account</button>
+            <p>By creating an account, you agree to our <a class="Terms">Terms of Service </a> and <a class="Terms">Privacy Policy</a><p>
+            <p>Already have an account? <a class="loginhere" href="./login.html">Log in here</a></p>
+        </form>
+        <div id="registrationMessage" class="message"></div>
+    </div>
+
+    <script src="./js/auth.js"></script>
+</body>
+</html>
